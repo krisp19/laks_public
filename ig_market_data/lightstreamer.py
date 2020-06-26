@@ -423,7 +423,7 @@ if __name__ == "__main__":
         REAL_OR_NO_REAL = 'https://api.ig.com/gateway/deal'
         API_ENDPOINT = "https://api.ig.com/gateway/deal/session"
         API_KEY = 'Your API Key Here'
-        data = {"identifier": "Your Username Here", "password": "Your Password Here"}
+        data = {"identifier": user_name, "password": password}
     else:
         REAL_OR_NO_REAL = 'https://demo-api.ig.com/gateway/deal'
         API_ENDPOINT = "https://demo-api.ig.com/gateway/deal/session"
@@ -446,7 +446,7 @@ if __name__ == "__main__":
     ls = json.loads(r.text)['lightstreamerEndpoint']
     pwd = "CST-" + CST_token + "|" + "XST-" + x_sec_token
     ###   Krishna  #####
-    lightstreamer_client = LSClient("https://demo-apd.marketdatasystems.com", "DEFAULT",account_id, pwd)
+    lightstreamer_client = LSClient(ls, "DEFAULT",account_id, pwd)
     try:
         lightstreamer_client.connect()
     except Exception:
