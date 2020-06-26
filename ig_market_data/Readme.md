@@ -11,9 +11,9 @@ Pre-Requisites:
 
 Ensure the environment varaibles are set before running the program.
 
-ig_account_id=your_account_id
-ig_account_type=Demo/Real
-ig_password=your_password
-ig_user_name=your_account
-ig_api_key=your_api_key
+- ig_account_id=your_account_id
+- ig_account_type=Demo/Real
+- ig_password=your_password
+- ig_user_name=your_account
+- ig_api_key=your_api_key
 
