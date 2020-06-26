@@ -17,3 +17,6 @@ Ensure the environment varaibles are set before running the program.
 - ig_user_name=your_account
 - ig_api_key=your_api_key
 
+Set the above parameters and run the python script. The output would appear as under:
+
+![image](https://user-images.githubusercontent.com/55232057/85843036-81464700-b798-11ea-9e0e-f5834b9f1452.png)
