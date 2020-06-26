@@ -1,2 +1,2 @@
 # laks_public
-Public Repo
+ig_market_data: Module to obtain market data tick in realtime
