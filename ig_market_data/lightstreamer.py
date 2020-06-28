@@ -411,6 +411,7 @@ if __name__ == "__main__":
         print("user_name: your_demo_or_real_account_user_name")
         print("password: your_demo_or_real_account_password")
         print("account_id: your_account_id_obtained_from_ig")
+        print("ig_api_key: your_account_api_key_displayed_in_ig")
         print(traceback.format_exc())
         import sys
         sys.exit(1)
@@ -422,7 +423,7 @@ if __name__ == "__main__":
     if b_REAL:
         REAL_OR_NO_REAL = 'https://api.ig.com/gateway/deal'
         API_ENDPOINT = "https://api.ig.com/gateway/deal/session"
-        API_KEY = 'Your API Key Here'
+        API_KEY = api_key
         data = {"identifier": user_name, "password": password}
     else:
         REAL_OR_NO_REAL = 'https://demo-api.ig.com/gateway/deal'
