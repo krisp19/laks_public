@@ -15,6 +15,7 @@ To build from source:
 - Perform a docker build (Eg: docker build --rm -t "ig_market_data" .) . Notice the .(dot) in the end is intentional
 - Run the container by setting the enviornment variables
   Eg: docker run --name market_data -e ig_account_id="your_account_id_obtained_from_ig" -e ig_account_type="Demo/Real" -e ig_password="your_account_password" -e ig_user_name="your_user_name" -e ig_api_key="your_api_key" -dit ig_market_data
+  
   account_id in ig is usually a 5 char random string as seen in your IG web portal: Eg: ABCDE. 
   account_type is the type of account which is demo or real. Eg:  Demo/Real
   ig_password: The password of the account. Note this password may be different from your main account password. Its usually the password you set for apps like these. Eg: ig_password="password_set_for_this_app"
