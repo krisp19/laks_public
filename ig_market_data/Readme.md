@@ -11,7 +11,7 @@ Pre-Requisites:
 - You have good knowledge of docker.
 
 To build from source:
-- Clone this repo and navigate to ig/market/data directory.
+- Clone this repo and navigate to ig_market_data directory.
 - Perform a docker build (Eg: docker build --rm -t "ig_market_data" .) . Notice the .(dot) in the end is intentional
 - Run the container by setting the enviornment variables
   Eg: docker run --name market_data -e ig_account_id="your_account_id_obtained_from_ig" -e ig_account_type="Demo/Real" -e ig_password="your_account_password" -e ig_user_name="your_user_name" -e ig_api_key="your_api_key" -dit ig_market_data
@@ -22,7 +22,7 @@ To build from source:
   
   ig_password: The password of the account. Note this password may be different from your main account password. Its usually the password you set for apps like these. Eg: ig_password="password_set_for_this_app".
   
-  ig_user_name: The user_name of the account. Note this user_name may be different from your main account password. Its usually the user_name you set for apps like these. ig_user_name="user_name_set_for_this_app".
+  ig_user_name: The user_name of the account. Note this user_name may be different from your main account user_name. Its usually the user_name you set for apps like these. ig_user_name="user_name_set_for_this_app".
   
   ig_api_key: The api key for this application. ig_api_key="long_api_key_shown_in_your_ig_portal".
 
