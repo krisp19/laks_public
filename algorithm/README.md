@@ -1,3 +1,11 @@
+How to Trade a Moving average cross
+---
+This EA algoritm trades on EMA cross. Entry and exit criteria is EMA cross. Although written for a FX pair, this EA works very well on commodoties, indices & stocks. 
+
+Warning
+---
+Ensure to calibrate the fast moving average, slow moving averages & lot size correctly. Check with your broker and adjust lot size accordingly. Always test against a demo account before going live with this algo. If configured & calibrated correctly this bot can generate money. Misconfiguring the EA will invariably result in loss. Remember: Not doing anything is better than losing money. 
+
 Business Pre-Requisites
 ----
 1. You have an account with a broker.
