@@ -92,7 +92,14 @@ void OnTick()
       trade.Sell(LOT_SIZE,NULL, Bid, stop, take, NULL);
    }
    /////
-     
+   
+   /////
+   if (signal == "buy" && PositionsTotal() > 0 )
+   {
+      CloseShortPositions();
+   }
+   /////
+   
    if (signal == "buy" && PositionsTotal() == 0)
    {
       //Open a long position
@@ -101,13 +108,6 @@ void OnTick()
       // certain brokers may not allow instant reversal with a fixed stop & take. Hence you may want to pass 0.0 and fix stop/take later.
       trade.Buy(LOT_SIZE,NULL, Ask, /*stop*/0.0, /*take*/0.0, NULL);
    }
-   
-   /////
-   if (signal == "buy" && PositionsTotal() > 0 )
-   {
-      CloseShortPositions();
-   }
-   /////
    
    //Chart output
    Comment("The Signal is: ",signal);
